@@ -1,2 +1,2 @@
 # Skillswap
-skill swap is an skill exchange platform, which enables peer-to-peer communicatuion.
+skillswap is an skill exchange platform, which enables peer-to-peer communicatuion.
