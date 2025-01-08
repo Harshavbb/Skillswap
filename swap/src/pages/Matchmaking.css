@@ -1,0 +1,15 @@
+.matchmaking {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .matchmaking h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+  }
+  
+  .matchmaking p {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  

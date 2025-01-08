@@ -1,0 +1,24 @@
+.skill-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card h3 {
+    color: #4CAF50;
+    font-size: 1.25rem;
+  }
+  
+  .skill-card p {
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
