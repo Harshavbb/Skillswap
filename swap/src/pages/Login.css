@@ -1,0 +1,91 @@
+/* Full-page styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #f0f2f5;
+    
+  }
+  
+  /* Box containing both image and form */
+  .login-box {
+    display: flex;
+    width: 800px;
+    height: 80vh;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image section */
+  .login-image {
+    flex: 1;
+    background: #e8eaf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Form section */
+  .login-form {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .login-form input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ddd; /* Only bottom border */
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .login-form input:focus {
+    border-bottom: 2px solid #4a90e2; /* Highlighted color */
+  }
+  /* Button */
+  .login-form button {
+    width: 40%;
+    padding: 12px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .login-form button:hover {
+    background: #357ae8;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

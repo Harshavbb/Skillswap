@@ -1,0 +1,57 @@
+/* General form styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Soft gradient */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input fields */
+  .form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+  }
+  
+  .form-container input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Submit button */
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-container button:hover {
+    background: #0056b3;
+  }
+  
+  /* Error message */
+  .form-container p {
+    color: red;
+    margin-top: 10px;
+  }
+  

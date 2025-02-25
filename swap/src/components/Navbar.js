@@ -1,31 +1,39 @@
-import React, { useState } from 'react';
-import './Navbar.css';
+import { Link } from "react-router-dom";
+import { auth } from "../firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import './Navbar.css'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [user] = useAuthState(auth);
+  const navigate = useNavigate();
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleLogout = async () => {
+    await signOut(auth);
+    navigate("/login");
   };
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand">SkillSwap</div>
-      <button className="hamburger" onClick={toggleMenu}>
-        <span className="line"></span>
-        <span className="line"></span>
-        <span className="line"></span>
-      </button>
-      <ul className={`navbar-nav ${isOpen ? 'open' : ''}`}>
-        <li>
-          <a href="/">Explore</a>
-        </li>
-        <li>
-          <a href="/profile">Profile</a>
-        </li>
-        <li>
-          <a href="/dashboard">Dashboard</a>
-        </li>
+      <div className="logo">
+        <Link to="/">SkillSwap</Link>
+      </div>
+      <ul className="nav-links">
+        <li><Link to="/">Home</Link></li>
+        {user ? (
+          <>
+            <li><Link to="/profile">Profile</Link></li>
+            <li><Link to="/matchmaking">Matchmaking</Link></li>
+            <li><Link to="/chat">Chat</Link></li>
+            <li><button onClick={handleLogout} className="logout-btn">Logout</button></li>
+          </>
+        ) : (
+          <>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/signup">Signup</Link></li>
+          </>
+        )}
       </ul>
     </nav>
   );

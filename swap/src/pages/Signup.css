@@ -1,0 +1,58 @@
+/* Signup Form Container */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: url(C:\Users\harsh\OneDrive\Desktop\Skillswap\Skillswap\swap\public\images\rb_5871.png);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.signup-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Underline Input Fields */
+.signup-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.3s ease-in-out;
+    outline: none;
+}
+
+.signup-container input:focus {
+    border-bottom: 2px solid #00b4d8;
+}
+
+/* Submit Button */
+.signup-container button {
+    width: 100%;
+    padding: 12px;
+    background: #00b4d8;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.signup-container button:hover {
+    background: #0096c7;
+}
+
+/* Error Message */
+.signup-container p {
+    color: red;
+    margin-top: 10px;
+}
