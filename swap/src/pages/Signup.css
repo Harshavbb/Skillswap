@@ -1,25 +1,40 @@
 /* Signup Form Container */
 .signup-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 30px;
-    background: url(C:\Users\harsh\OneDrive\Desktop\Skillswap\Skillswap\swap\public\images\rb_5871.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Signup Box */
+.signup-box {
+    display: flex;
+    width: 800px;
+    background: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Side - Signup Form */
+.signup-form {
+    width: 50%;
+    padding: 30px;
+    background: white;
     text-align: center;
 }
 
 /* Heading */
-.signup-container h2 {
+.signup-form h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Underline Input Fields */
-.signup-container input {
-    width: 90%;
+/* Input Fields */
+.signup-form input {
+    width: 75%;
     padding: 12px;
     margin: 10px 0;
     border: none;
@@ -30,29 +45,72 @@
     outline: none;
 }
 
-.signup-container input:focus {
-    border-bottom: 2px solid #00b4d8;
+.signup-form input:focus {
+    border-bottom: 2px solid #d5971a;
+}
+.signup-wrapper {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents overflow issues */
 }
 
 /* Submit Button */
-.signup-container button {
-    width: 100%;
+.signup-form button {
+    width: 30%;
     padding: 12px;
-    background: #00b4d8;
+    background: #f88912;
     color: white;
     font-size: 18px;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
 
-.signup-container button:hover {
-    background: #0096c7;
+.signup-form button:hover {
+    background: #db743c;
 }
 
+.signup-container p{
+    color: #e2874a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.signup-container p a:hover {
+    text-decoration: underline;
+  }
+
+  .signup-form p a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.signup-form p a:hover {
+    margin-left: 5px; /* Moves text slightly on hover */
+}
 /* Error Message */
-.signup-container p {
-    color: red;
+.signup-form p {
+    color: rgb(32, 21, 21);
     margin-top: 10px;
+}
+
+
+/* Right Side - Image */
+.signup-image {
+    width: 50%;
+    display: fixed;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0; /* Light gray background */
+}
+
+.signup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space without distortion */
 }

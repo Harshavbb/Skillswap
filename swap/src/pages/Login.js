@@ -2,6 +2,7 @@ import { useState } from "react";
 import { auth } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -26,7 +27,7 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <div className="login-image">
-          <img src="/images/login_image.jpg" alt="Login" />
+          <img src="/images/login5.jpg" alt="Login" />
         </div>
         <div className="login-form">
           <h2>LOGIN</h2>
@@ -43,9 +44,12 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <button type="submit">Login</button>
+            <button type="submit">Login →</button>
             {error && <p className="error">{error}</p>}
           </form>
+          <p>
+          Don't have an account? <Link to="/signup">Sign up</Link>
+        </p>
         </div>
       </div>
     </div>

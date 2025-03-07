@@ -3,6 +3,8 @@ import { auth, db } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import "./Signup.css"; // Import Signup CSS
 
 const Signup = () => {
@@ -37,17 +39,24 @@ const Signup = () => {
   };
 
   return (
-    <div className="signup-container">
-      <h2>Sign Up for SkillSwap</h2>
-      <form onSubmit={handleSignup}>
-        <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} required />
-        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
-        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
-        <input type="text" placeholder="Location" onChange={(e) => setLocation(e.target.value)} required />
-        <button type="submit">Sign Up</button>
-        {error && <p>{error}</p>}
-      </form>
-    </div>
+    <div className="signup-wrapper">
+  <div className="signup-form">
+    <h2>Sign Up for SkillSwap</h2>
+    <form onSubmit={handleSignup}>
+      <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} required />
+      <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
+      <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
+      <input type="text" placeholder="Location" onChange={(e) => setLocation(e.target.value)} required />
+      <button type="submit">Sign Up →</button>
+      {error && <p>{error}</p>}
+    </form>
+    <p>Already have an account? <Link to="/login">Login</Link></p>
+  </div>
+
+  <div className="signup-image">
+    <img src="/images/signup6.jpg" alt="Signup" />
+  </div>
+</div>
   );
 };
 

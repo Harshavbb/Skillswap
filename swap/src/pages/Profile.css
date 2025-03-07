@@ -1,64 +1,68 @@
-/* Profile.css */
-
+/* Profile Container */
 .profile-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url(C:\Users\harsh\OneDrive\Desktop\Skillswap\Skillswap\swap\public\images\rb_1501.png) no-repeat center center/cover; /* Background Image */
+  background: #f4f4f4;
 }
 
+/* Profile Card */
 .profile-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  max-width: 400px;
+  max-width: 450px;
   width: 90%;
 }
 
-.profile-card h2 {
-  font-size: 28px;
-  color: #333;
+/* Avatar */
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
-.profile-card p {
-  font-size: 18px;
-  color: #555;
-  margin: 8px 0;
+/* Info Cards */
+.info-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.profile-card .email {
-  font-weight: bold;
-  color: #007bff;
-}
-
-.loading-text {
+.info-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-size: 22px;
-  color: #f39c12;
+  min-width: 120px;
+  flex: 1;
 }
 
-.error-text {
+/* Buttons */
+.add-btn {
+  background-color: #e18345;
+  color: white;
+  padding: 6px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Edit Input */
+.edit-input {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   text-align: center;
-  font-size: 20px;
-  color: red;
-  font-weight: bold;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .profile-card {
-    max-width: 90%;
-  }
-
-  .profile-card h2 {
-    font-size: 24px;
-  }
-
-  .profile-card p {
-    font-size: 16px;
-  }
 }

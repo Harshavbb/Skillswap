@@ -1,15 +1,42 @@
-.matchmaking {
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .matchmaking h1 {
-    font-size: 2rem;
-    color: #4CAF50;
-  }
-  
-  .matchmaking p {
-    font-size: 1.25rem;
-    color: #555;
-  }
-  
+.matchmaking-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.match-card {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.match-card:hover {
+  transform: scale(1.05);
+}
+
+.match-card h3 {
+  color: #00b4d8;
+  margin-bottom: 5px;
+}
+
+.match-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.match-card button {
+  padding: 8px 12px;
+  background: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.match-card button:hover {
+  background: #0096c7;
+}

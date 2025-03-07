@@ -7,6 +7,25 @@
     background: #f0f2f5;
     
   }
+  .login-form p, .signup-container p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-form p a {
+    color: #e2874a;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-form p a:hover{
+    text-decoration: underline;
+  }
+  .login-form p a:hover {
+    margin-left: 5px; /* Moves text slightly on hover */
+    transition: margin-left 0.3s ease-in-out;
+}
+  
   
   /* Box containing both image and form */
   .login-box {
@@ -50,9 +69,10 @@
     color: #333;
   }
   
+  
   /* Input fields */
   .login-form input {
-    width: 90%;
+    width: 80%;
     padding: 12px;
     margin-bottom: 15px;
     border: none;
@@ -63,13 +83,13 @@
     transition: border-color 0.3s;
   }
   .login-form input:focus {
-    border-bottom: 2px solid #4a90e2; /* Highlighted color */
+    border-bottom: 2px solid #e27f4a; /* Highlighted color */
   }
   /* Button */
   .login-form button {
     width: 40%;
     padding: 12px;
-    background: #4a90e2;
+    background: #e2774a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -79,7 +99,7 @@
   }
   
   .login-form button:hover {
-    background: #357ae8;
+    background: #e8ac35;
   }
   
   /* Error message */
